@@ -1,7 +1,6 @@
 # portfolio-v2
 Second iteration of portfolio with more minimalist, designer portfolio feel.
 # Structure
-src
 - pages: key pages of the website (e.g., home page, projects, etc.)
     - home.js: home page of entire website, landing page
     - projects.js: showcase of completed projects
