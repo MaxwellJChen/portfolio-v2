@@ -1,5 +1,6 @@
 # portfolio-v2
 Second iteration of portfolio with more minimalist, designer portfolio feel. Focus on practicality and clarity in website organization before embellishment.
+Goal to showcase previous works, establish contact with potential employers, and illustrate web development capabilities.
 
 # Structure
 ### src
@@ -16,11 +17,28 @@ Second iteration of portfolio with more minimalist, designer portfolio feel. Foc
 
 # Design Choices
 ### Units of Measurement
-1. px for border widths, box shadows, etc.
-2. em for font sizes
-3. rem for margins and paddings
-4. ch for paragraph text widths or sizing containers for monospace fonts
-5. vw/vh occassionally for layouts
+1. px: concrete unit, use for border widths, box shadows, etc.
+2. em: relative to parent's font size, use for font sizes
+3. rem: represents font size of root element, use for margins and paddings
+4. ch: width of the character 0, use for paragraph text widths or sizing containers for monospace fonts
+5. vw/vh: relative to 1% of width or height of viewport, use occassionally for layouts
+
+### Fonts
+- Rubik 80s Fade: Section headers (Home, About, Projects)
 
 # Pages
+Each page will have a general "header," then a hierarchy of text and subheaders. Should make sure css namespace remains organized between different pages.
+
 ### Home
+- Name, socials, and brief personal description
+- Interesting visual (e.g., abacus beads sliding and transforming into digial values, or black box opening into various computational algorithms or mathematical structures)
+- Navigation to rest of website in navbar
+
+### About
+- Name, socials, and more length personal description
+- Interests, skills, goals, hobbies, etc.
+
+### Projects
+- Project card with project title and project image
+- On click, transitions to full page with summary of methods, process, and outcomes
+- Could add a search feature for project titles or tech stack used
