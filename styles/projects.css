@@ -69,6 +69,7 @@
 .card-desc {
     font-family: "Roboto";
     font-size: min(19px, 4.75vw); 
+    color: dimgray;
     display: -webkit-box;
     -webkit-box-orient: vertical; 
     text-overflow: ellipsis;
@@ -80,6 +81,7 @@
 .card-footer {
     font-size: min(17px, 4.25vw);
     font-weight: 550;
+    color: dimgray;
     margin-top: auto;
     padding-block: 0.5em;
     padding-inline: 1em;
