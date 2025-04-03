@@ -6,6 +6,7 @@ nav {
     border-bottom: solid;
     border-color: lightgray;
     border-width: 1px;
+    margin-bottom: 1em;
 }
 
 nav > a {
