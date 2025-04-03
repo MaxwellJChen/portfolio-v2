@@ -30,33 +30,3 @@ img {
     left: 50%;
     transform: translateX(-50%) rotate(-90deg);
 }
-
-nav {
-    // background-color: cyan;
-    display: flex;
-    flex-direction: row;
-    padding-block: 0.5em;
-    padding-inline: 7vw;
-}
-
-/*
-nav a:first-child {
-    margin-left: auto;
-}
-*/
-
-a {
-    font-family: "Manrope";
-    color: black;
-    font-size: min(18px, 4.5vw);
-    text-decoration: none;
-    font-weight: 450;
-    padding-inline: 1em;
-    padding-block: 0.5em;
-    border-radius: 5px;
-}
-
-a:hover {
-    transition: 0.5s ease;
-    background-color: whitesmoke; 
-}

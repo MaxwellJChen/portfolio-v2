@@ -11,13 +11,13 @@
 
 .title {
     font-size: min(40px, 9vw);
-    padding-block: 2vh; 
+    padding-top: 2vh;
     font-weight: 500;
 }
 
 .grid {
     display: grid;
-    padding-block: 2em;
+    padding-block: 1em;
     gap: 4em;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
@@ -79,42 +79,13 @@
 }
 
 .card-footer {
+    font-family: "Roboto";
     font-size: min(17px, 4.25vw);
-    font-weight: 550;
+    font-weight: 500;
     color: dimgray;
     margin-top: auto;
     padding-block: 0.5em;
     padding-inline: 1em;
-}
-
-nav {
-    // background-color: cyan;
-    display: flex;
-    flex-direction: row;
-    padding-block: 0.5em;
-    padding-inline: 7vw;
-}
-
-/*
-nav a:first-child {
-    margin-left: auto;
-}
-*/
-
-a {
-    font-family: "Manrope";
-    color: black;
-    font-size: min(18px, 4.5vw);
-    text-decoration: none;
-    font-weight: 450;
-    padding-inline: 1em;
-    padding-block: 0.5em;
-    border-radius: 5px;
-}
-
-a:hover {
-    transition: 0.5s; 
-    background-color: whitesmoke; 
 }
 
 ul {
@@ -142,7 +113,7 @@ li:hover {
 
 .slot-date {
     font-family: "Roboto";
-    font-size: min(16px, 4.25vw);
+    font-size: min(17px, 4.25vw);
     font-weight: 500;
     color: dimgray;
     text-align: justified;
