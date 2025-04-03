@@ -99,9 +99,6 @@ li {
     display: grid;
     gap: 1em;
     grid-template-columns: 1fr 6fr;
-    font-family: "Manrope";
-    font-size: min(22px, 5.25vw);
-    font-weight: 450;
     border-bottom: solid;
     border-color: lightgray;
     border-width: 1px;
@@ -110,6 +107,18 @@ li {
 li:hover {
     transition: 0.2s ease;
     box-shadow: 0 1.5px 1.5px -1px rgba(33,33,33,.5); 
+}
+
+.slot-title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical; 
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    font-family: "Manrope";
+    font-size: min(22px, 5.25vw);
+    font-weight: 450;
 }
 
 .slot-date {
