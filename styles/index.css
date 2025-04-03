@@ -3,10 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
 
 .container {
+    margin-block: 5em;
     font-family: "Manrope";
-    /* background-color: cyan; */
-    padding-block: 50px;
-    padding-inline: 7vw; 
 }
 
 .title {
@@ -32,18 +30,18 @@
 }
 
 #motherboard {
-    width: min(40vw, 325px);
+    width: min(35vw, 325px);
     transform: rotate(-90deg);
     z-index: 5;
 }
 
 #abacus {
-    width: min(28vw, 280px);
+    width: min(27vw, 280px);
     transform: rotate(-5deg);
 }
 
 #cpu-bottom {
-    width: min(25vw, 250px);
+    width: min(24vw, 250px);
     transform: rotate(5deg);
 }
 
