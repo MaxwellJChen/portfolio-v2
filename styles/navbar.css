@@ -2,7 +2,6 @@ nav {
     display: flex;
     flex-direction: row;
     padding-bottom: 0.5em;
-    padding-inline: 7vw;
     border-bottom: solid;
     border-color: lightgray;
     border-width: 1px;
