@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
 
+:root {
+    --grid-dim: min(60px, 5vw);
+}
+
 .container {
     font-family: "Manrope";
     display: flex;
@@ -26,8 +30,8 @@
 
 .image-container {
     display: inline-grid;
-    grid-template-columns: repeat(19, min(60px, 5vw));
-    grid-template-rows: repeat(10, min(60px, 5vw));
+    grid-template-columns: repeat(19, var(--grid-dim));
+    grid-template-rows: repeat(10, var(--grid-dim));
     margin-inline: auto;
 }
 
@@ -35,6 +39,21 @@
     /* max-height: 100px; */
     grid-row: 3 / span 2;
     grid-column: span 2;
+    animation: move-cpu 1.25s ease-in reverse;
+    animation-fill-mode: backwards;
+    animation-delay: 1s;
+    z-index: -1;
+}
+
+@keyframes move-cpu {
+    0% {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+    100% {
+        transform: translateX(calc(6 * var(--grid-dim)));
+        opacity: 0%;
+    }
 }
 
 #motherboard {
@@ -42,6 +61,19 @@
     grid-row: 2 / span 4;
     grid-column: span 4;
     align-self: center;
+    z-index: -1;
+    animation: move-motherboard 1s ease-in reverse;
+}
+
+@keyframes move-motherboard {
+    0% {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+    100% {
+        transform: translateX(calc(4 * var(--grid-dim)));
+        opacity: 0%;
+    }
 }
 
 #monitor {
@@ -62,20 +94,62 @@
     /* max-height: 200px; */
     grid-row: 2 / span 4;
     grid-column: span 2;
+    animation: move-ram 0.75s ease-in reverse;
+    z-index: -1;
+}
+
+@keyframes move-ram {
+    0% {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+    100% {
+        transform: translateX(calc(-2 * var(--grid-dim)));
+        opacity: 0%;
+    }
 }
 
 #ssd {
     /* max-height: 200px; */
     grid-row: 2 / span 4;
     grid-column: span 2;
+    animation: move-ssd 0.75s ease-in reverse;
+    animation-delay: 0.75s;
+    animation-fill-mode: backwards;
+    z-index: -2;
+}
+
+@keyframes move-ssd {
+    0% {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+    100% {
+        transform: translateX(calc(-4 * var(--grid-dim)));
+        opacity: 0%;
+    }
 }
 
 #gpu {
     /* max-height: 200px; */
     grid-row: 2 / span 4;
     grid-column: span 2;
+    animation: move-gpu 0.75s ease-in reverse;
+    animation-fill-mode: backwards;
+    animation-delay: 1.5s;
+    z-index: -3;
 }
 
+@keyframes move-gpu {
+    0% {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+    100% {
+        transform: translateX(calc(-6 * var(--grid-dim)));
+        opacity: 0%;
+    }
+}
 img {
     max-height: 100%;
     max-width: 100%;
