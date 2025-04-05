@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
 
+:root {
+    --card-width: 350px;
+}
+
 .container {
     /* background-color: orange; */
     font-family: "Manrope";
@@ -10,10 +14,10 @@
     padding-inline: 7vw;
     flex-direction: column;
     gap: 1em;
-    max-width: calc(3 * 375px + 2 * 4em + 2 * 7vw);
+    max-width: calc(3 * var(--card-width) + 2 * 4em + 2 * 7vw);
     box-sizing: border-box;
     width: 100%;
-    margin-inline: auto;
+    margin: auto;
 }
 
 .title {
@@ -33,7 +37,7 @@
     border-width: 0.5px;
     border-style: solid;
     max-height: 350px;
-    max-width: 375px;
+    max-width: var(--card-width);
     display: flex;
     flex-direction: column;
 }
@@ -102,8 +106,8 @@ li {
     list-style-type: none;
     display: grid;
     gap: 1em;
-    grid-template-columns: 1.5fr 6fr;
-    max-width: calc(3 * 375px + 2 * 4em);
+    grid-template-columns: 1fr 5fr;
+    max-width: calc(3 * var(--card-width) + 2 * 4em);
     border-bottom: solid;
     border-color: lightgray;
     border-width: 1px;
