@@ -1,12 +1,7 @@
 nav {
     display: flex;
     flex-direction: row;
-    padding-bottom: 0.5em;
-    /*
-    border-bottom: solid;
-    border-color: lightgray;
-    border-width: 1px;
-    */
+    margin-bottom: 1em;
 }
 
 nav > a {

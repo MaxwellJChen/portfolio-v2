@@ -8,10 +8,12 @@
 
 .container {
     font-family: "Manrope";
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5vh;
+    margin: auto;
 }
 
 .title {
@@ -21,11 +23,11 @@
 }
 
 .subtitle {
-    font-family: "Roboto";
-    font-size: min(25px, 4vw, 3vh);
+    font-family: "Manrope";
+    font-size: min(19px, 4.75vw); 
     margin-inline: auto;
     text-align: center;
-    font-weight: 250;
+    font-weight: 200;
 }
 
 #image-container {
@@ -40,7 +42,7 @@
     grid-column: span 2;
     animation: fade-in 1s ease;
     animation-fill-mode: backwards;
-    animation-delay: 1.5s; 
+    animation-delay: 0.6s; 
 }
 
 #motherboard {
@@ -49,7 +51,7 @@
     align-self: center;
     animation: fade-in 1s ease;
     animation-fill-mode: backwards;
-    animation-delay: 0.75s; 
+    animation-delay: 0.3s; 
 }
 
 #monitor {
@@ -57,7 +59,7 @@
     grid-column: span 7;
     animation: fade-in 1s ease;
     animation-fill-mode: backwards;
-    animation-delay: 0.25s;
+    animation-delay: 0.1s;
 }
 
 #keyboard {
@@ -67,7 +69,7 @@
     margin-top: 1vh;
     animation: fade-in 1s ease;
     animation-fill-mode: backwards;
-    animation-delay: 0.5s;
+    animation-delay: 0.2s;
 }
 
 #ram {
@@ -75,7 +77,7 @@
     grid-column: span 2;
     animation: fade-in 1s ease;
     animation-fill-mode: backwards;
-    animation-delay: 1.25s; 
+    animation-delay: 0.5s; 
 }
 
 #ssd {
@@ -83,7 +85,7 @@
     grid-column: span 2;
     animation: fade-in 1s ease;
     animation-fill-mode: backwards;
-    animation-delay: 1s; 
+    animation-delay: 0.4s; 
 }
 
 #gpu {
@@ -91,7 +93,7 @@
     grid-column: span 2;
     animation: fade-in 1s ease;
     animation-fill-mode: backwards;
-    animation-delay: 2s; 
+    animation-delay: 0.7s; 
 }
 
 img {

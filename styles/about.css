@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+
+.container {
+    /* background-color: orange; */
+    font-family: "Manrope";
+    font-weight: 250;
+    display: flex;
+    padding-inline: 7vw;
+    flex-direction: column;
+    gap: 3em;
+    box-sizing: border-box;
+    width: 100%;
+    margin-block: 3vh;
+}
+
+.title {
+    font-size: min(50px, 8vw);
+    font-weight: 500;
+}
+
+.desc {
+    font-size: min(19px, 4.75vw); 
+}
+
+.timeline-container {
+    margin-inline: auto;
+    width: calc(2 * min(40vw, 300px) + 3px);
+}
+
+.timeline-break {
+    margin-inline: auto;
+    font-family: "Manrope";
+    font-size: min(20px, 5vw); 
+    font-weight: 450;
+    color: white;
+    padding-block: 0.25em;
+    padding-inline: 0.5em;
+    border-radius: 5px;
+    margin-block: 2rem;
+    text-align: center;
+}
+
+.timeline {
+    font-size: min(17px, 4.5vw); 
+    display: grid;
+    grid-template-columns: min(40vw, 300px) 3px min(40vw, 300px);
+    margin-inline: auto;
+    opacity: 0%;
+    transition: opacity 1s ease;
+}
+
+.timeline.appear {
+    opacity: 100%;
+}
+
+.left {
+    margin-right: 1em;
+    text-align: right;
+}
+
+.right {
+    margin-left: 1em;
+}
+
+.timeline-middle {
+    position: relative;
+    background-color: black;
+}
+
+.timeline-point {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    background: black;
+    border-radius: 50%;
+}
+
+.timeline-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.timeline-title {
+    font-family: "Manrope";
+    font-size: min(18px, 4.5vw); 
+    font-weight: 450;
+    /*
+    color: white;
+    background-color: #800000;
+    padding-block: 0.25em;
+    padding-inline: 0.5em;
+    */
+}
+
+.timeline-desc {
+    font-family: "Roboto";
+    font-size: min(17px, 4.5vw); 
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+#logos {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5vw;
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+    justify-content: center;
+
+    img {
+        width: min(7vw, 70px);
+        height: min(7vw, 70px);
+        margin: 0 0.5vw;
+        filter: brightness(0);
+        transition: scale 0.5s, transform 0.5s, filter 0.25s ease;
+    }
+
+    img:hover {
+        scale: 1.2;
+        filter: brightness(1);
+        transform: translateY(-15%);
+    }
+
+    #document {
+        filter: grayscale(1) brightness(0);
+    }
+
+    #document:hover {
+        filter: grayscale(1) brightness(2.15);
+    }
+
+    #chess {
+        margin: 0.10vw;
+    }
+}
