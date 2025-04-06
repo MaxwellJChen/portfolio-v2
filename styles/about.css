@@ -16,7 +16,7 @@
 }
 
 .title {
-    font-size: min(50px, 7vw, 4vh);
+    font-size: min(50px, 7vw);
     font-weight: 500;
 }
 
