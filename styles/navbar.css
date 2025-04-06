@@ -1,19 +1,17 @@
 nav {
     display: flex;
     flex-direction: row;
-    padding-bottom: 0.5em;
     /*
     border-bottom: solid;
     border-color: lightgray;
     border-width: 1px;
     */
-    margin-bottom: 1em;
 }
 
 nav > a {
     font-family: "Manrope";
     color: black;
-    font-size: min(18px, 4.5vw);
+    font-size: min(18px, 4vw);
     text-decoration: none;
     font-weight: 450;
     padding-inline: 1em;
