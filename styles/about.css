@@ -16,12 +16,12 @@
 }
 
 .title {
-    font-size: min(50px, 8vw);
+    font-size: min(50px, 7vw, 4vh);
     font-weight: 500;
 }
 
 .desc {
-    font-size: min(19px, 4.75vw); 
+    font-size: min(19px, 3.75vw); 
 }
 
 .timeline-container {
@@ -43,7 +43,7 @@
 }
 
 .timeline {
-    font-size: min(17px, 4.5vw); 
+    font-size: min(17px, 3.75vw); 
     display: grid;
     grid-template-columns: min(40vw, 300px) 3px min(40vw, 300px);
     margin-inline: auto;
@@ -88,7 +88,7 @@
 
 .timeline-title {
     font-family: "Manrope";
-    font-size: min(18px, 4.5vw); 
+    font-size: min(18px, 4.25vw); 
     font-weight: 450;
     /*
     color: white;
@@ -100,7 +100,7 @@
 
 .timeline-desc {
     font-family: "Roboto";
-    font-size: min(17px, 4.5vw); 
+    font-size: min(17px, 3.75vw); 
     display: flex;
     flex-direction: column;
     gap: 0.5em;
@@ -109,14 +109,14 @@
 #logos {
     display: flex;
     flex-direction: row;
-    gap: 0.5vw;
-    margin-top: 2rem;
-    margin-bottom: 7rem;
+    gap: 2vw;
+    margin-top: 3vh;
+    margin-bottom: 4rem;
     justify-content: center;
 
     img {
-        width: min(7vw, 70px);
-        height: min(7vw, 70px);
+        width: min(10vw, 70px);
+        height: min(10vw, 70px);
         margin: 0 0.5vw;
         filter: brightness(0);
         transition: scale 0.5s, transform 0.5s, filter 0.25s ease;

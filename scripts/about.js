@@ -9,7 +9,7 @@ const faders = [...document.getElementsByClassName("timeline")];
 
 const appear_options = {
     threshold: 1,
-    rootMargin: "0px 0px -200px 0px"
+    rootMargin: `0px 0px -${window.innerHeight * 0.1}px 0px`
 };
 const appear_on_scroll = new IntersectionObserver(function(entries, appear_on_scroll) {
     entries.forEach(entry => {
