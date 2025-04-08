@@ -11,12 +11,13 @@
     flex-direction: column;
     gap: 3em;
     box-sizing: border-box;
-    width: 100%;
+    max-width: 1000px;
     margin-block: 3vh;
+    margin-inline: auto;
 }
 
 .title {
-    font-size: min(50px, 7vw);
+    font-size: min(40px, 7vw);
     font-weight: 500;
 }
 
@@ -109,14 +110,14 @@
 #logos {
     display: flex;
     flex-direction: row;
-    gap: 2vw;
+    gap: min(20px, 2.5vw);
     margin-top: 3vh;
     margin-bottom: 2vh;
     justify-content: center;
 
     img {
-        width: min(10vw, 70px);
-        height: min(10vw, 70px);
+        width: min(10vw, 50px);
+        height: min(10vw, 50px);
         margin: 0 0.5vw;
         filter: brightness(0);
         transition: scale 0.5s, transform 0.5s, filter 0.25s ease;
